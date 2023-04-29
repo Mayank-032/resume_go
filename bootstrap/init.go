@@ -23,7 +23,7 @@ func initRepo() {
 }
 
 func initUseCase() {
-	resumeUCase = _resumeUCase.NewResumeUseCase(resumeRepo)
+	resumeUCase = _resumeUCase.NewResumeUseCase(resumeRepo, DB.Client)
 }
 
 func initRoutes(apiGroup *gin.RouterGroup) {

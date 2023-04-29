@@ -1,1 +1,5 @@
 package domain
+
+const (
+	EmptyString = ""
+)
